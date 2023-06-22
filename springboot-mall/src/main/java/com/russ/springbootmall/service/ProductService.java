@@ -1,6 +1,6 @@
 package com.russ.springbootmall.service;
 
-import com.russ.springbootmall.constant.ProductCategory;
+import com.russ.springbootmall.dto.ProductQueryParams;
 import com.russ.springbootmall.dto.ProductRequest;
 import com.russ.springbootmall.model.Product;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ProductService {
 
-    List<Product> getProducts(ProductCategory category , String search);
+    List<Product> getProducts(ProductQueryParams productQueryParams);
 
     Product getProductById(Integer productId);
 
